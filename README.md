@@ -23,7 +23,7 @@ hapiMongooseDbConnector = require 'hapi-mongoose-db-connector'
 server = new Hapi.Server 3000, "localhost", {}
 
 pluginConf = [
-    plugin: hapiMongooseDbConnector
+    register: hapiMongooseDbConnector
     options:
       mongodbUrl: "your mongodb url."
     #... more plugins
